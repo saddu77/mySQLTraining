@@ -1,0 +1,71 @@
+MySQL DataBase:  Structured Query Language
+===============
+		Need of DataBase?
+		File System 
+
+		Library Management:
+		Search: beginning<- Good
+			mid <- Average
+			end<- poor
+
+		Feasible Soultion:
+					Organize or Structure or Design
+
+		Instantly
+
+		Set Up:
+		-------
+
+			version: Server version: 8.0.33 MySQL Community Server - GPL
+		
+
+			DataBase
+			Table
+			Records or Data 
+
+			demoDB
+			users
+			     id email password 
+			to list all databases : show databases;
+			Lets create a new database: create database demoDB;
+						    USE demodb;
+						    SELECT DATABASE() FROM DUAL;
+							Dual ia one row,one-col built in table in Oracle Database.
+
+						    Create Table users(id int,email varchar(50),password varchar(50));
+							1  john@gmail.com  john123
+			
+
+			Syntax: create table table_name;
+			example: users
+			task:  products
+
+							Select * from users;
+
+							insert into users(id,email,password) values(1,"alex@gmail.com","123456");
+
+						Create Query
+						Read Query
+						Update Query 
+								Update table_name 
+								set col_name = 'new value'
+								where col_name = 'existing unique value';
+
+								update users
+								set id = 4
+								where email = "dolly@gmail.com";
+
+
+								CRUD Operations: Create,Read,Update,Delete
+						Task:
+						Create a New Database : productsDB;
+						Create a new table :    products;
+									id,name,qty,price,brand
+									Enter at least 10 products and perform different queries with where clause.
+
+
+			
+		
+			
+
+		
