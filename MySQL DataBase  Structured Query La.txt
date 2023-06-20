@@ -62,7 +62,29 @@ MySQL DataBase:  Structured Query Language
 						Create a new table :    products;
 									id,name,qty,price,brand
 									Enter at least 10 products and perform different queries with where clause.
+							     Primary Key and AUTO Increment:
 
+			     create table products (id INT AUTO_INCREMENT PRIMARY KEY,name varchar(50),qty int,price varchar(50));
+
+			     Adding multiple records:
+				insert into products(name,qty,price) values ("Tab",3,"15000"),("LCD",5,"27000");
+
+			     Adding new column to a existing Table:
+				ALTER TABLE users ADD phone varchar(50);
+
+			     Alter Table Name:
+				 ALTER TABLE users RENAME login;
+			
+				ALTER TABLE users MODIFY COLUMN id INT AUTO_INCREMENT PRIMARY KEY;
+
+			     Truncate: when we just want to remove records or table data not the table structure.
+				  truncate table users;
+			     Drop: Drop removes the table completely along with the structure.
+				 drop table products;
+
+			    Unique:
+				create table brands(id int,brand varchar(50) UNIQUE,code int);
+				ALTER TABLE brands MODIFY COLUMN code int UNIQUE;
 
 			
 		
