@@ -86,6 +86,13 @@ MySQL DataBase:  Structured Query Language
 				create table brands(id int,brand varchar(50) UNIQUE,code int);
 				ALTER TABLE brands MODIFY COLUMN code int UNIQUE;
 
+
+				Creating Database,Altering DataBase
+				Creating Tables with Auto Increment,Primary Key,Unique
+				Inserting Records into a Table.
+				Perform Search Query [Where clause]
+				Deleting Records[Drop and Truncate]
+
 			
 		
 			
