@@ -88,10 +88,60 @@ MySQL DataBase:  Structured Query Language
 
 
 				Creating Database,Altering DataBase
-				Creating Tables with Auto Increment,Primary Key,Unique
-				Inserting Records into a Table.
-				Perform Search Query [Where clause]
-				Deleting Records[Drop and Truncate]
+			Creating Tables with Auto Increment,Primary Key,Unique
+			Inserting Records into a Table.
+			Perform Search Query [Where clause-and -or ]
+				select * from customer where cname = "syed" and phone = "7816958209";
+				select * from customer where cname = "john" and phone = "7816958209";
+				select * from customer where cname = "john" or phone = "7816958209";
+
+			Deleting Records[Drop and Truncate]
+
+			MySQL Server: 8.0.33
+			username: root
+			password: admin
+			port: 3306
+			host: localhost or 127.0.0.1
+
+			To export DB:
+				locate mysqldump command in Program Files\MySQL-New\MySQL Server 8.0\bin.
+				Open a command prompt and execute:
+				mysqldump -u root -p crmcb > crmbackup.sql
+
+				create a  new database with the name erpdb;
+			To Import DB:
+				mysql -u root -p erpdb < crmbackup.sql
+
+			Example:
+				Existing Database: crmdb
+				It SHould be : customerDB
+			=========================================================================================
+			Where clause with AND and OR:
+		
+			select * FROM customer WHERE (cname = 'syed' AND email='sadakhath07@gmail.com') OR (id=3);	
+			select * FROM customer WHERE (cname = 'syed' AND email='sadakhath7@gmail.com') OR (id=3);
+			==========================================================================================
+			
+			Distinct: Is used to remove duplicate records from the table and fetch only the Unique Records.
+				   Its used only with SELECT statement.
+				  select DISTINCT cname,phone,email from customer;
+			==========================================================================================
+			Order By:
+                                 Used to sort  the records in ascending or descending order.
+				select * from customer where location = 'Delhi' ORDER BY cname;
+				select * from customer where location = 'Delhi' ORDER BY cname desc;
+
+				select * from customer where location = 'Delhi' ORDER BY id;
+				select * from customer where location = 'Delhi' ORDER BY id desc;
+		
+				Using Both ASC and DESC:
+				select * from customer where id < 6 ORDER BY cname DESC ,location ASC;
+			===========================================================================================
+
+			Group By:
+				used to collect data from multiple records and group the result by one or more column.
+
+			===========================================================================================
 
 			
 		
