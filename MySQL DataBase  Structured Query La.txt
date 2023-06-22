@@ -142,7 +142,13 @@ MySQL DataBase:  Structured Query Language
 				used to collect data from multiple records and group the result by one or more column.
 
 			===========================================================================================
-
+			Orders : o_id,o_date,o_status
+			Customer : c_id,c_name,c_email,c_phone,c_location
+			product : p_id,p_name,p_qty
+			
+			===========================================================================================
+			Tasks: Perfom Create,Read,Update and Delete Operation .
+				Every Table shoould have 10 records
 			
 		
 			
