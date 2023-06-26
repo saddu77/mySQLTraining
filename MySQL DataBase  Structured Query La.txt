@@ -196,8 +196,7 @@ MySQL DataBase:  Structured Query Language
 						: destination
 						: date
 						: start_time
-						: end_time
-						
+						: end_time		
 
 
 
