@@ -149,6 +149,65 @@ MySQL DataBase:  Structured Query Language
 			===========================================================================================
 			Tasks: Perfom Create,Read,Update and Delete Operation .
 				Every Table shoould have 10 records
+			============================================================================================
+			===========================================================================================
+
+			Primary Key: id
+			===========
+				
+				Unique
+				Not Be NULL or empty
+					
+				AUTO_INCREMENT
+					
+				CREATE TABLE Employee(
+				emp_id INT AUTO_INCREMENT PRIMARY KEY,
+				emp_name VARCHAR(50),
+				emp_age int);
+
+				create table products (id int,p_name varchar(50),p_qty int,p_price long);
+				desc products;
+				ALTER TABLE products ADD PRIMARY KEY(id);
+				desc products;
+				ALTER TABLE products DROP PRIMARY KEY;
+				desc products;
+
+
+			Foreign Key:
+			============
+	     CREATE TABLE billing (b_id int,bill_no int,bill_amount float,c_id int, CONSTRAINT fk_customer FOREIGN KEY(c_id) REFERENCES customer(id));	
+
+
+			Tasks:
+			======
+				Passenger 
+						: p_id Primary key Not null
+						: p_name
+						: p_age
+						: p_gender
+						: p_phone
+						: p_email
+
+				Train
+						: t_id Primary key Not null 
+						: train_no
+						: train_name
+						: source
+						: destination
+						: date
+						: start_time
+						: end_time
+						
+
+
+
+				Ticket
+						:ticket_id
+						:journey_date
+						:price
+						:p_id  [References Passenger Table p_id]
+						:t-id  [References Train Table t_id]
+					
 			
 		
 			
