@@ -208,7 +208,9 @@ MySQL DataBase:  Structured Query Language
 						:t-id  [References Train Table t_id]
 					
 			
-		
+		select * from passenger INNER JOIN ticket ON passenger.p_id = ticket.t_id;
+		select * from passenger LEFT JOIN ticket ON passenger.p_id = ticket.t_id;
+		select * from passenger RIGHT JOIN ticket ON passenger.p_id = ticket.t_id;
 			
 
 		
