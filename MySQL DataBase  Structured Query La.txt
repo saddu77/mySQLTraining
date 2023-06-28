@@ -250,6 +250,16 @@ MySQL DataBase:  Structured Query Language
 				 from customer 
 				  Right Join orders
 				  ON customer.id = orders.id;
+
+
+		Task:
+			Write a SQL Query to find the addresses(location_id,street_address,city,state_province,country_name)of all the 
+			departments using join[inner join,left join and right join].
+
+			Table: location
+				loc_id,street_address,postal_code,city,state_privince,country_id
+			Table: countries
+			        country_id,country_name,region_id
 			
 		
 
