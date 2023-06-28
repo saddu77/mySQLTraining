@@ -211,6 +211,14 @@ MySQL DataBase:  Structured Query Language
 		select * from passenger INNER JOIN ticket ON passenger.p_id = ticket.t_id;
 		select * from passenger LEFT JOIN ticket ON passenger.p_id = ticket.t_id;
 		select * from passenger RIGHT JOIN ticket ON passenger.p_id = ticket.t_id;
-			
+		Joins:
+		-----
+		Inner Join: returns all rows from multiple tables where the join condition is satisified.
+			Syntax:
+				SELECT 	columns 
+				FROM table1
+				INNER JOIN table2
+				ON tabl1.column = table2.column;
+
 
 		
