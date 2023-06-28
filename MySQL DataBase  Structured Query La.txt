@@ -236,6 +236,21 @@ MySQL DataBase:  Structured Query Language
 					  customer LEFT JOIN orders
 					   ON customer.id = orders.id;
 
+		Right Join: Returns all rows from right-hand table specified in the ON  condition and only those rows from the other table where
+				the join condition is fulfilled.
+
+			Syntax:
+				SELECT columns
+				FROM table1
+				RIGHT JOIN table2
+				ON table1.column = table2.column;
+
+			Example:
+				select *
+				 from customer 
+				  Right Join orders
+				  ON customer.id = orders.id;
+			
 		
 
 
