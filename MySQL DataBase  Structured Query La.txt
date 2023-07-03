@@ -260,6 +260,14 @@ MySQL DataBase:  Structured Query Language
 				loc_id,street_address,postal_code,city,state_privince,country_id
 			Table: countries
 			        country_id,country_name,region_id
+
+		Boolean:
+			create table employee(emp_id INT PRIMARY KEY AUTO_INCREMENT,name varchar(50),age int,isLoggedIn BOOLEAN);
+			insert into employee(name,age,isLoggedIn) values ('Alex',23,true),('Bob',24,false);
+			select * from employee;
+			select name,age,IF(isLoggedIn,'true','false') completed from employee;
+			select * from employee where isLoggedIn = true;
+			select * from employee where isLoggedIn = false;
 			
 		
 
