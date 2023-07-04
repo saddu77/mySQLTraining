@@ -272,6 +272,9 @@ MySQL DataBase:  Structured Query Language
 
 			select * from users WHERE username IN('ALex','Bob');
 			select * from users WHERE username ='ALex' OR username = 'Bob';
+
+			select * from employee where emp_id IN (select emp_id from employee where emp_id > 2);
+			select * from employee where emp_id IN (select emp_id from employee where salary > 90000);
 			
 		
 
